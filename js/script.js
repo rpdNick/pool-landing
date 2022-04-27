@@ -1,19 +1,18 @@
-
 jQuery(function ($) {
     $(document).ready(function () {
         //width of scroling line
-        function setScrollWisth(){
+        function setScrollWisth() {
             var s = $(window).scrollTop(),
-            d = $(document).height(),
-            c = $(window).height();
+                d = $(document).height(),
+                c = $(window).height();
             var scrollPercent = Math.round((s / (d - c)) * 100);
-            if($('.progress-bar .proggres')){
+            if ($('.progress-bar .proggres')) {
                 $('.progress-bar .proggres').css('width', scrollPercent + '%');
             }
         }
         setScrollWisth();
         //when page is scrolled
-        $( window ).scroll(function() {
+        $(window).scroll(function () {
             setScrollWisth();
         });
         // preloader

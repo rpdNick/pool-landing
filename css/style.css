@@ -1,4 +1,84 @@
-html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
   margin: 0;
   padding: 0;
   border: 0;
@@ -8,7 +88,17 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 }
 
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
   display: block;
 }
 
@@ -16,11 +106,13 @@ body {
   line-height: 1;
 }
 
-ol, ul {
+ol,
+ul {
   list-style: none;
 }
 
-blockquote, q {
+blockquote,
+q {
   quotes: none;
 }
 
@@ -51,6 +143,10 @@ table {
 body,
 html {
   scroll-behavior: smooth;
+}
+
+.owl-carousel .owl-stage-outer {
+  padding: 5px 0;
 }
 
 .load-wrapper {
@@ -128,6 +224,10 @@ html {
 
 .page-wrap .header .logo img {
   max-width: 100%;
+}
+
+.page-wrap .header .logo .logo-mobile {
+  display: none;
 }
 
 .page-wrap .header .menu {
@@ -1187,8 +1287,11 @@ html {
   .page-wrap .header .logo {
     max-width: 150px;
   }
-  .page-wrap .header .menu {
+  .page-wrap .header .menu .menu-item {
     display: none;
+  }
+  .page-wrap .header .menu .menu-item:last-child {
+    display: block;
   }
   .page-wrap section {
     padding-left: 25px;
@@ -1199,19 +1302,22 @@ html {
   .page-wrap section .under-header {
     max-width: 580px;
   }
-  .page-wrap .platform .text {
-    width: 65%;
-    max-width: 375px;
+  .page-wrap .platform .flex-row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
-  .page-wrap .platform .picture {
-    max-width: 100%;
-    overflow: visible;
+  .page-wrap .platform .flex-row .text {
+    width: 100%;
   }
-  .page-wrap .platform .picture img {
-    width: 200%;
-    max-width: 600px;
-    -webkit-transform: translate(10%);
-            transform: translate(10%);
+  .page-wrap .platform .flex-row .btn-gradient {
+    display: block;
+    width: 290px;
+    margin: 40px auto 60px auto;
+  }
+  .page-wrap .platform .flex-row .picture {
+    padding-left: 0;
   }
   .page-wrap .how-it-works .how-it-works-list {
     -ms-flex-wrap: wrap;
@@ -1303,6 +1409,140 @@ html {
   }
   .page-wrap .for-who .for-who-list .for-who-item {
     width: 50%;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .page-wrap .you-get .you-get-list .list-item .list-wrap {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .page-wrap .you-get .you-get-list .list-item .list-wrap .left-col {
+    max-width: 100%;
+    width: 100%;
+  }
+  .page-wrap .you-get .you-get-list .list-item .list-wrap .right-col {
+    width: 100%;
+    max-width: 100%;
+    margin-top: 30px;
+  }
+  .page-wrap .you-get .you-get-list .list-item .list-wrap .right-col .description {
+    max-width: 100%;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .page-wrap .logo-pc {
+    display: none;
+  }
+  .page-wrap .logo-mobile {
+    display: block !important;
+  }
+  .page-wrap header {
+    padding: 2px 20px;
+  }
+  .page-wrap section {
+    padding-bottom: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .page-wrap .platform .picture {
+    width: 80%;
+  }
+  .page-wrap .how-it-works .how-it-works-list .list-item {
+    width: 100%;
+    max-width: 100%;
+    padding: 0px;
+    margin-bottom: 20px;
+  }
+  .page-wrap .how-it-works .how-it-works-list .list-item .picture {
+    float: left;
+    max-width: 135px;
+    margin-right: 20px;
+    padding-bottom: 0;
+  }
+  .page-wrap .how-it-works .how-it-works-list .list-item .title {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    text-align: left;
+    padding-top: 20px;
+  }
+  .page-wrap .how-it-works .how-it-works-list .list-item .title::after {
+    left: 0;
+    bottom: -16px;
+  }
+  .page-wrap .how-it-works .how-it-works-list .list-item .description {
+    text-align: left;
+    font-size: 11px;
+  }
+  .page-wrap .how-it-works .how-it-works-list .list-item:last-child .title {
+    padding-top: 0;
+  }
+  .page-wrap .you-get .you-get-list {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .page-wrap .you-get .you-get-list .list-item {
+    width: 47%;
+    padding: 35px 15px 35px 15px;
+    height: 245px;
+    min-width: 170px;
+  }
+  .page-wrap .you-get .you-get-list .list-item .list-wrap {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    padding: 0;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+  .page-wrap .you-get .you-get-list .list-item .list-wrap .left-col {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    padding-right: 0;
+  }
+  .page-wrap .you-get .you-get-list .list-item .list-wrap .left-col .title {
+    padding-left: 0;
+    margin: 25px 0;
+    font-size: 13px;
+    line-height: 15px;
+  }
+  .page-wrap .you-get .you-get-list .list-item .list-wrap .right-col {
+    margin-top: 0;
+  }
+  .page-wrap .you-get .you-get-list .list-item .list-wrap .right-col .description {
+    font-size: 11px;
+    line-height: 12px;
   }
 }
 /*# sourceMappingURL=style.css.map */
