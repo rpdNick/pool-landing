@@ -230,7 +230,7 @@ html {
                 max-width: 100%;
             }
 
-            .logo-mobile {
+            img.logo-mobile {
                 display: none;
             }
         }
@@ -1074,6 +1074,10 @@ html {
             img {
                 max-width: 100%;
             }
+
+            .logo-mobile {
+                display: none;
+            }
         }
     }
 }
@@ -1365,6 +1369,29 @@ html {
     }
 }
 
+.owl-dots {
+    width: fit-content;
+    margin: 0 auto;
+
+    .owl-dot {
+        width: 5px;
+        height: 5px;
+        border-radius: 50%;
+        background: $gradient !important;
+        opacity: .5;
+        transition: .5s;
+        margin-right: 5px;
+    }
+
+    .owl-dot:last-child {
+        margin-right: 0;
+    }
+
+    .active {
+        opacity: 1;
+    }
+}
+
 @media screen and (max-width: 720px) {
     .page-wrap .you-get .you-get-list .list-item .list-wrap {
         flex-direction: column;
@@ -1500,5 +1527,58 @@ html {
                 }
             }
         }
+
+        .benefits {
+            .benefits-list {
+                .benefits-item {
+                    flex-direction: column-reverse;
+
+                    .text {
+                        padding-right: 0;
+                        width: 100%;
+
+                        .title {
+                            display: block;
+                            width: fit-content;
+                            margin: 20px auto 0 auto;
+
+                            &::after {
+                                bottom: -19px;
+                            }
+                        }
+
+                        .description {
+                            text-align: center;
+                            padding: 40px 20px 0 20px;
+                        }
+                    }
+                }
+            }
+        }
+
+        .arrow-list {
+            padding-left: 0;
+            padding-right: 20px;
+        }
+
+        .for-who {
+            .flex-row {
+                flex-direction: column-reverse;
+
+                .for-who-list {
+                    width: 100%;
+
+                    .for-who-item {
+                        font-size: 13px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 380px) {
+    .page-wrap .you-get .you-get-list .list-item {
+        width: 100%;
     }
 }

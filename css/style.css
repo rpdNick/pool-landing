@@ -226,7 +226,7 @@ html {
   max-width: 100%;
 }
 
-.page-wrap .header .logo .logo-mobile {
+.page-wrap .header .logo img.logo-mobile {
   display: none;
 }
 
@@ -1178,6 +1178,10 @@ html {
   max-width: 100%;
 }
 
+.page-wrap .footer .logo .logo-mobile {
+  display: none;
+}
+
 @-webkit-keyframes gradient {
   0% {
     background-position: 0% 50%;
@@ -1412,6 +1416,33 @@ html {
   }
 }
 
+.owl-dots {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0 auto;
+}
+
+.owl-dots .owl-dot {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: -webkit-gradient(linear, left top, right top, from(#B27AF8), to(#7FA1F8)) !important;
+  background: linear-gradient(90deg, #B27AF8 0%, #7FA1F8 100%) !important;
+  opacity: .5;
+  -webkit-transition: .5s;
+  transition: .5s;
+  margin-right: 5px;
+}
+
+.owl-dots .owl-dot:last-child {
+  margin-right: 0;
+}
+
+.owl-dots .active {
+  opacity: 1;
+}
+
 @media screen and (max-width: 720px) {
   .page-wrap .you-get .you-get-list .list-item .list-wrap {
     -webkit-box-orient: vertical;
@@ -1543,6 +1574,52 @@ html {
   .page-wrap .you-get .you-get-list .list-item .list-wrap .right-col .description {
     font-size: 11px;
     line-height: 12px;
+  }
+  .page-wrap .benefits .benefits-list .benefits-item {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .page-wrap .benefits .benefits-list .benefits-item .text {
+    padding-right: 0;
+    width: 100%;
+  }
+  .page-wrap .benefits .benefits-list .benefits-item .text .title {
+    display: block;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    margin: 20px auto 0 auto;
+  }
+  .page-wrap .benefits .benefits-list .benefits-item .text .title::after {
+    bottom: -19px;
+  }
+  .page-wrap .benefits .benefits-list .benefits-item .text .description {
+    text-align: center;
+    padding: 40px 20px 0 20px;
+  }
+  .page-wrap .arrow-list {
+    padding-left: 0;
+    padding-right: 20px;
+  }
+  .page-wrap .for-who .flex-row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .page-wrap .for-who .flex-row .for-who-list {
+    width: 100%;
+  }
+  .page-wrap .for-who .flex-row .for-who-list .for-who-item {
+    font-size: 13px;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .page-wrap .you-get .you-get-list .list-item {
+    width: 100%;
   }
 }
 /*# sourceMappingURL=style.css.map */

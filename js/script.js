@@ -28,6 +28,14 @@ jQuery(function ($) {
                 center: true,
             });
         }
+        if ($(window).width() < 420) {
+            $('.benefits .benefits-list').owlCarousel({
+                items: 1,
+                loop: true,
+                center: true,
+                dots: true,
+            });
+        }
         // price-row
     });
 });
