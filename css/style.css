@@ -955,6 +955,13 @@ html {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  position: relative;
+}
+
+.page-wrap .price .price-row .owl-dots {
+  position: absolute;
+  bottom: -25px;
+  display: none;
 }
 
 .page-wrap .price .price-row .price-item {
@@ -1475,12 +1482,28 @@ html {
     padding: 2px 20px;
   }
   .page-wrap section {
-    padding-bottom: 50px;
+    padding-bottom: 40px;
     padding-left: 20px;
     padding-right: 20px;
+    padding-top: 40px;
+  }
+  .page-wrap section h2 {
+    font-size: 24px;
+    line-height: 25px;
+  }
+  .page-wrap section h2 .smile {
+    width: 25px;
+    height: 25px;
+  }
+  .page-wrap .platform h2 {
+    font-size: 36px;
+    line-height: 44px;
   }
   .page-wrap .platform .picture {
     width: 80%;
+  }
+  .page-wrap .platform .text h2 {
+    margin-top: 80px;
   }
   .page-wrap .how-it-works .how-it-works-list .list-item {
     width: 100%;
@@ -1526,12 +1549,15 @@ html {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    padding-top: 40px;
   }
   .page-wrap .you-get .you-get-list .list-item {
     width: 47%;
     padding: 35px 15px 35px 15px;
     height: 245px;
     min-width: 170px;
+    margin-top: 0;
+    margin-bottom: 40px;
   }
   .page-wrap .you-get .you-get-list .list-item .list-wrap {
     -webkit-box-orient: vertical;
@@ -1575,6 +1601,9 @@ html {
     font-size: 11px;
     line-height: 12px;
   }
+  .page-wrap .benefits .benefits-list {
+    padding-top: 40px;
+  }
   .page-wrap .benefits .benefits-list .benefits-item {
     -webkit-box-orient: vertical;
     -webkit-box-direction: reverse;
@@ -1599,9 +1628,33 @@ html {
     text-align: center;
     padding: 40px 20px 0 20px;
   }
+  .page-wrap .ligh-bg h2 {
+    font-size: 26px;
+  }
+  .page-wrap .ligh-bg .arrow-list {
+    padding-top: 40px;
+  }
   .page-wrap .arrow-list {
     padding-left: 0;
     padding-right: 20px;
+  }
+  .page-wrap .for-who {
+    padding-top: 0;
+  }
+  .page-wrap .for-who .picture {
+    padding-top: 40px;
+    width: 100%;
+    margin-left: 0;
+  }
+  .page-wrap .for-who .picture img {
+    width: 80%;
+    -webkit-transform: translate(0);
+            transform: translate(0);
+    display: block;
+    margin: 0 auto;
+  }
+  .page-wrap .for-who .under-header {
+    display: none;
   }
   .page-wrap .for-who .flex-row {
     -webkit-box-orient: vertical;
@@ -1611,9 +1664,14 @@ html {
   }
   .page-wrap .for-who .flex-row .for-who-list {
     width: 100%;
+    padding-top: 40px;
   }
   .page-wrap .for-who .flex-row .for-who-list .for-who-item {
     font-size: 13px;
+    line-height: 14px;
+  }
+  .page-wrap .price .price-row {
+    padding-top: 40px;
   }
 }
 

@@ -865,6 +865,13 @@ html {
             display: flex;
             align-items: center;
             justify-content: center;
+            position: relative;
+
+            .owl-dots {
+                position: absolute;
+                bottom: -25px;
+                display: none;
+            }
 
             .price-item {
                 padding-left: 10px;
@@ -1430,14 +1437,36 @@ html {
         }
 
         section {
-            padding-bottom: 50px;
+            padding-bottom: 40px;
             padding-left: 20px;
             padding-right: 20px;
+            padding-top: 40px;
+
+            h2 {
+                font-size: 24px;
+                line-height: 25px;
+
+                .smile {
+                    width: 25px;
+                    height: 25px;
+                }
+            }
         }
 
         .platform {
+            h2 {
+                font-size: 36px;
+                line-height: 44px;
+            }
+
             .picture {
                 width: 80%;
+            }
+
+            .text {
+                h2 {
+                    margin-top: 80px;
+                }
             }
         }
 
@@ -1483,16 +1512,20 @@ html {
         }
 
         .you-get {
+
             .you-get-list {
                 flex-direction: row;
                 justify-content: space-between;
                 align-items: center;
+                padding-top: 40px;
 
                 .list-item {
                     width: 47%;
                     padding: 35px 15px 35px 15px;
                     height: 245px;
                     min-width: 170px;
+                    margin-top: 0;
+                    margin-bottom: 40px;
 
                     .list-wrap {
                         flex-direction: column;
@@ -1529,7 +1562,10 @@ html {
         }
 
         .benefits {
+
             .benefits-list {
+                padding-top: 40px;
+
                 .benefits-item {
                     flex-direction: column-reverse;
 
@@ -1556,22 +1592,59 @@ html {
             }
         }
 
+        .ligh-bg {
+            h2 {
+                font-size: 26px;
+            }
+
+            .arrow-list {
+                padding-top: 40px;
+            }
+        }
+
         .arrow-list {
             padding-left: 0;
             padding-right: 20px;
         }
 
         .for-who {
+            padding-top: 0;
+
+            .picture {
+                padding-top: 40px;
+                width: 100%;
+                margin-left: 0;
+
+                img {
+                    width: 80%;
+                    transform: translate(0);
+                    display: block;
+                    margin: 0 auto;
+                }
+            }
+
+            .under-header {
+                display: none;
+            }
+
             .flex-row {
                 flex-direction: column-reverse;
 
                 .for-who-list {
                     width: 100%;
+                    padding-top: 40px;
 
                     .for-who-item {
                         font-size: 13px;
+                        line-height: 14px;
                     }
                 }
+            }
+        }
+
+        .price {
+            .price-row {
+                padding-top: 40px;
             }
         }
     }
