@@ -33,10 +33,11 @@ jQuery(function ($) {
             $('.benefits-list').addClass('off');
             // stopPriceCarusel();
         }
-        // price-row
     });
 });
 
+
+// Init or disable carusel on window resize
 $(window).resize(function () {
     if ($(window).width() > 992) {
         stopPriceCarusel();
