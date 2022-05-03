@@ -960,7 +960,7 @@ html {
 
 .page-wrap .price .price-row .owl-dots {
   position: absolute;
-  bottom: -25px;
+  bottom: -10px;
   display: none;
 }
 
@@ -1672,6 +1672,13 @@ html {
   }
   .page-wrap .price .price-row {
     padding-top: 40px;
+  }
+  .page-wrap .price {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .page-wrap .price .price-row .owl-dots {
+    display: block;
   }
 }
 

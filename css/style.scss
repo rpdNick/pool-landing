@@ -869,7 +869,7 @@ html {
 
             .owl-dots {
                 position: absolute;
-                bottom: -25px;
+                bottom: -10px;
                 display: none;
             }
 
@@ -1645,6 +1645,17 @@ html {
         .price {
             .price-row {
                 padding-top: 40px;
+            }
+        }
+    }
+
+    .page-wrap .price {
+        margin-left: 0;
+        margin-right: 0;
+
+        .price-row {
+            .owl-dots {
+                display: block;
             }
         }
     }

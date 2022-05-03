@@ -21,28 +21,33 @@ jQuery(function ($) {
         AOS.init();
 
         // carousel
-        if ($(window).width() < 992) {
-            startPriceCarusel()
-        } else {
-            $('.price .price-row').addClass('off');
+        if ($(window).width() < 992 & $(window).width() > 420) {
+            stopPriceCarusel();
+            startPriceCarusel();
         }
         if ($(window).width() <= 420) {
             startBenefitsCarusel();
+            stopPriceCarusel();
+            startDottedPriceCarusel();
         } else {
             $('.benefits-list').addClass('off');
+            // stopPriceCarusel();
         }
         // price-row
     });
 });
 
 $(window).resize(function () {
+    if ($(window).width() > 992) {
+        stopPriceCarusel();
+    }
     if ($(window).width() < 992 && $(window).width() > 420) {
         startPriceCarusel();
-    } else {
-        stopPriceCarusel();
     }
     if ($(window).width() <= 420) {
         startBenefitsCarusel();
+        stopPriceCarusel();
+        startDottedPriceCarusel();
     } else {
         stopBenefitsCarusel();
     }
@@ -82,7 +87,7 @@ function startDottedPriceCarusel() {
 }
 
 function stopPriceCarusel() {
-    var owl = $('.price-row');
+    var owl = $('.price .price-row');
     owl.trigger('destroy.owl.carousel');
     owl.addClass('off');
 }
